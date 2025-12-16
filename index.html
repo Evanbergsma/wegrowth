@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wegrowth - Orientation Post-Bac Disruptive</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wegrowth – Conseil en orientation post‑bac</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav><h1>Wegrowth</h1><p>Trajectoires IA pour lycéens ambitieux</p></nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Votre futur commence ici</h2>
-            <p>Conseil personnalisé post-bac par trois étudiants experts</p>
-            <button>Réservez votre diagnostic</button>
-        </section>
-        <section class="services">
-            <h3>Nos Expertises</h3>
-            <div class="grid">
-                <div><h4>Diagnostic IA</h4><p>Analyse prédictive de vos forces</p></div>
-                <div><h4>Coaching 1:1</h4><p>Accompagnement individuel premium</p></div>
-                <div><h4>Simulateur Parcours</h4><p>Visualisez votre trajectoire sur 10 ans</p></div>
-            </div>
-        </section>
-    </main>
-    <footer>© 2025 Wegrowth | contact@wegrowth.fr</footer>
+  <header class="topbar">
+    <div class="logo">Wegrowth</div>
+    <nav class="nav">
+      <a href="#services">Offres</a>
+      <a href="#method">Méthode</a>
+      <a href="#about">Équipe</a>
+      <a href="#contact" class="nav-cta">Prendre RDV</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Choisir ses études ne devrait pas être un pari.</h1>
+        <p>Wegrowth accompagne les lycéens ambitieux dans leurs choix post‑bac avec une approche analytique, humaine et orientée résultats.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Réserver un diagnostic offert</a>
+          <a href="#services" class="btn-secondary">Voir nos accompagnements</a>
+        </div>
+        <p class="hero-note">3 étudiants de grande école, déjà passés par Parcoursup, au service de votre trajectoire.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Nos offres d’accompagnement</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Diagnostic Express</h3>
+          <p>Un entretien ciblé pour clarifier le profil, les forces et les pistes d’orientation réalistes.</p>
+          <ul>
+            <li>Questionnaire en ligne</li>
+            <li>Entretien visio 45 min</li>
+            <li>Compte‑rendu synthétique</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Parcoursup Stratégique</h3>
+          <p>Construction d’une stratégie de vœux alignée avec le niveau scolaire et l’ambition du lycéen.</p>
+          <ul>
+            <li>Analyse du dossier</li>
+            <li>Hiérarchisation des vœux</li>
+            <li>Plan d’actions jusqu’aux résultats</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Coaching Premium</h3>
+          <p>Suivi personnalisé sur plusieurs semaines pour sécuriser les choix et les inscriptions.</p>
+          <ul>
+            <li>Sessions régulières</li>
+            <li>Accès WhatsApp entre les séances</li>
+            <li>Bilan final pour l’entrée dans le supérieur</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="method" class="section section-alt">
+      <h2>Notre méthode Wegrowth</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Analytique</h3>
+          <p>Nous combinons résultats scolaires, centres d’intérêt et débouchés métiers pour éviter les choix “au feeling”.</p>
+        </div>
+        <div>
+          <h3>Humaine</h3>
+          <p>Les décisions se prennent en échange direct avec le lycéen et, s’il le souhaite, ses parents.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Qui se cache derrière Wegrowth ?</h2>
+      <p class="center-text">Trois étudiants de l’enseignement supérieur, passés par les mêmes étapes, qui ont décidé de professionnaliser l’aide à l’orientation.</p>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <h2>Parlons de votre projet</h2>
+      <p class="center-text">Laissez‑nous un message, nous revenons vers vous sous 24h.</p>
+      <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Nom et prénom" required>
+          <input type="email" name="email" placeholder="E‑mail" required>
+        </div>
+        <input type="text" name="subject" placeholder="Classe / situation (ex : Terminale G, réorientation…)" required>
+        <textarea name="message" rows="4" placeholder="Expliquez votre situation en quelques lignes." required></textarea>
+        <button type="submit" class="btn-primary">Envoyer ma demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Wegrowth – Conseil en orientation post‑bac</p>
+  </footer>
 </body>
 </html>
+
+

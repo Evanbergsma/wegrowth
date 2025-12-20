@@ -54,7 +54,7 @@ main { min-height:70vh; }
   font-weight: 500;
   font-size: 15px;
    font-family: 'Times New Roman', Times, serif;
-   letter-spacing: -0.04em;
+   letter-spacing: -0.03em;
 }
 
 .main-nav a:hover {
@@ -72,7 +72,7 @@ main { min-height:70vh; }
   font-size: 14px;
   font-weight: 500;
    font-family: 'Times New Roman', Times, serif;
-   letter-spacing: -0.04em;
+   letter-spacing: -0.03em;
 }
 
 .header-cta:hover {
@@ -94,7 +94,7 @@ main { min-height:70vh; }
   font-weight: 700;
   color: #111111;
     font-family: 'Times New Roman', Times, serif;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
   margin-bottom: 16px;
 }
 
@@ -130,7 +130,7 @@ main { min-height:70vh; }
   font-weight: 700;
   color: #111111;
     font-family: 'Times New Roman', Times, serif;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -157,7 +157,7 @@ main { min-height:70vh; }
   font-weight: 600;
   color: #111111;
     font-family: 'Times New Roman', Times, serif;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.03em;
   margin-bottom: 12px;
 }
 
@@ -426,6 +426,7 @@ main { min-height:70vh; }
   font-weight: 600;
   font-size: 18px;
 }
+
 
 
 

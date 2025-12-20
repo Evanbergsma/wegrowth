@@ -440,3 +440,92 @@ main { min-height:70vh; }
 
 
 
+
+
+
+
+/* === Offer grid (style Apple/WeWork) === */
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.offer-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.offer-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1d1d1f;
+}
+
+.offer-card .tagline {
+    font-size: 0.95rem;
+    color: #6e6e73;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.offer-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.offer-card.active .offer-detail {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f5f5f7;
+}
+
+.offer-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offer-detail li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #515154;
+    line-height: 1.5;
+}
+
+.offer-detail li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0071e3;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.offer-detail p {
+    font-size: 0.9rem;
+    color: #515154;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.offer-detail p strong {
+    color: #1d1d1f;
+    font-weight: 600;
+}

@@ -6,8 +6,8 @@ html, body { height:100%; }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: ##222222;
-  background-color: ##F5F0E8;
+  color: #222222;
+  background-color: #F5F0E8;
   line-height: 1.6;
 }
 
@@ -26,7 +26,7 @@ main { min-height:70vh; }
   align-items: center;
   justify-content: space-between;
   padding: 12px 48px;
-  border-bottom: 1px solid ##E0D5C8;
+  border-bottom: 1px solid #E0D5C8;
   background-color: #ffffff;
 }
 
@@ -121,7 +121,7 @@ main { min-height:70vh; }
 }
 
 .section-alt {
-  background-color: ##F2E6D8;
+  background-color: #F2E6D8;
 }
 
 .section h2 {
@@ -177,12 +177,12 @@ main { min-height:70vh; }
 }
 
 .btn-primary {
-  background-color: ##1E4B7A;
+  background-color: #1E4B7A;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: ##2A5A8F;
+  background-color: #2A5A8F;
 }
 
 .btn-secondary {
@@ -529,4 +529,5 @@ main { min-height:70vh; }
     color: #1d1d1f;
     font-weight: 600;
 }
+
 

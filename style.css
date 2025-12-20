@@ -248,6 +248,10 @@ main { min-height:70vh; }
   background-color: #ffffff;
 }
 
+.footer {
+  text-align: center;
+}
+
 /* QUIZ STYLES - Modern & Interactive */
 
 /* Quiz container */
@@ -425,6 +429,7 @@ main { min-height:70vh; }
   font-weight: 600;
   font-size: 18px;
 }
+
 
 
 

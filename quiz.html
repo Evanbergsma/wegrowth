@@ -381,6 +381,7 @@
       document.getElementById('quizResultText').innerHTML = message;
       document.getElementById('quizResult').style.display = "block";
       document.getElementById('quizResult').scrollIntoView({ behavior: 'smooth' });
+      }
  
 
 
@@ -517,10 +518,10 @@ function updateButtons() {
 }
 
 // Initialize on page load
-// if (document.readyState === 'loading') {
-//   document.addEventListener('DOMContentLoaded', initQuiz);
-// } else {
-  // initQuiz();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initQuiz);
+else {
+  initQuiz();
 }}
   </script>
 </body>

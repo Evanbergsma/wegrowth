@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz d'orientation – Wegrowth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Topbar / Navbar identique -->
+  <header class="topbar">
+    <div class="logo">Wegrowth</div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="offre.html">Notre offre</a>
+      <a href="equipe.html">L'équipe</a>
+      <a href="quiz.html" class="active">Quiz d'orientation</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero hero-small">
+      <h1>Quiz d'orientation post‑bac</h1>
+      <p>Réponds à une quinzaine de questions et découvre les études qui peuvent te convenir.</p>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Réponds aux questions</h2>
+        <form id="orientationQuiz">
+          <!-- Q1 -->
+          <div class="quiz-question">
+            <p>1. Ce que tu préfères en cours :</p>
+            <label><input type="radio" name="q1" value="prepa"> Raisonnement abstrait, exercices difficiles</label><br>
+            <label><input type="radio" name="q1" value="selectif"> Analyser des textes, rédiger, argumenter</label><br>
+            <label><input type="radio" name="q1" value="but"> Projets concrets, cas pratiques</label>
+          </div>
+
+          <!-- Q2 -->
+          <div class="quiz-question">
+            <p>2. Ton niveau global au lycée :</p>
+            <label><input type="radio" name="q2" value="prepa"> Très bon (top de classe, mentions hautes visées)</label><br>
+            <label><input type="radio" name="q2" value="selectif"> Bon (sérieux, résultats réguliers)</label><br>
+            <label><input type="radio" name="q2" value="but"> Correct mais irrégulier / en progrès</label>
+          </div>
+
+          <!-- Q3 -->
+          <div class="quiz-question">
+            <p>3. Ton intérêt pour les maths :</p>
+            <label><input type="radio" name="q3" value="prepa"> J'aime beaucoup et j'accepte une grosse charge</label><br>
+            <label><input type="radio" name="q3" value="selectif"> J'accepte les maths si c'est utile</label><br>
+            <label><input type="radio" name="q3" value="but"> Je préfère limiter les maths</label>
+          </div>
+
+          <!-- Q4 -->
+          <div class="quiz-question">
+            <p>4. Les matières que tu préfères :</p>
+            <label><input type="radio" name="q4" value="prepa"> Maths, physique, économie "théorique"</label><br>
+            <label><input type="radio" name="q4" value="selectif"> Histoire, géopolitique, langues, droit</label><br>
+            <label><input type="radio" name="q4" value="but"> Sciences appliquées, informatique, gestion, techniques</label>
+          </div>
+
+          <!-- Q5 -->
+          <div class="quiz-question">
+            <p>5. Ton rapport au travail :</p>
+            <label><input type="radio" name="q5" value="prepa"> Prêt à travailler beaucoup chaque semaine</label><br>
+            <label><input type="radio" name="q5" value="selectif"> Prêt à travailler sérieusement mais avec équilibre</label><br>
+            <label><input type="radio" name="q5" value="but"> Besoin de concret pour rester motivé</label>
+          </div>
+
+          <!-- Q6 -->
+          <div class="quiz-question">
+            <p>6. Tu te projettes plutôt :</p>
+            <label><input type="radio" name="q6" value="prepa"> En école très sélective (commerce, ingénieur, etc.)</label><br>
+            <label><input type="radio" name="q6" value="selectif"> En bonne formation universitaire ou grande fac</label><br>
+            <label><input type="radio" name="q6" value="but"> En formation professionnalisante avec stages</label>
+          </div>
+
+          <!-- Q7 -->
+          <div class="quiz-question">
+            <p>7. Tu aimes apprendre :</p>
+            <label><input type="radio" name="q7" value="prepa"> Dans un cadre très exigeant avec beaucoup de contrôle</label><br>
+            <label><input type="radio" name="q7" value="selectif"> Avec autonomie mais des attentes claires</label><br>
+            <label><input type="radio" name="q7" value="but"> En faisant, en stage, en projet</label>
+          </div>
+
+          <!-- Q8 -->
+          <div class="quiz-question">
+            <p>8. Ton intérêt pour l'international / l'allemand :</p>
+            <label><input type="radio" name="q8" value="franco"> Très fort, surtout pour les parcours franco‑allemands</label><br>
+            <label><input type="radio" name="q8" value="selectif"> Intéressé par l'international mais pas forcément allemand</label><br>
+            <label><input type="radio" name="q8" value="but"> Plutôt priorité à rester proche de chez moi</label>
+          </div>
+
+          <!-- Q9 -->
+          <div class="quiz-question">
+            <p>9. Tu te vois plutôt :</p>
+            <label><input type="radio" name="q9" value="prepa"> Dans des métiers à forte compétition (finance, conseil…)</label><br>
+            <label><input type="radio" name="q9" value="selectif"> Dans des métiers de réflexion (droit, enseignement, recherche…)</label><br>
+            <label><input type="radio" name="q9" value="but"> Dans des métiers concrets / techniques / de terrain</label>
+          </div>
+
+          <!-- Q10 -->
+          <div class="quiz-question">
+            <p>10. Ta manière de gérer le stress :</p>
+            <label><input type="radio" name="q10" value="prepa"> Je gère assez bien la pression scolaire</label><br>
+            <label><input type="radio" name="q10" value="selectif"> Je préfère un cadre exigeant mais pas extrême</label><br>
+            <label><input type="radio" name="q10" value="but"> Je veux éviter les environnements trop stressants</label>
+          </div>
+
+          <!-- Q11 -->
+          <div class="quiz-question">
+            <p>11. Ta motivation actuelle pour les études :</p>
+            <label><input type="radio" name="q11" value="prepa"> Très motivé, prêt à faire beaucoup d'efforts</label><br>
+            <label><input type="radio" name="q11" value="selectif"> Motivé si le projet me parle vraiment</label><br>
+            <label><input type="radio" name="q11" value="but"> Besoin de concret rapidement pour rester motivé</label>
+          </div>
+
+          <!-- Q12 -->
+          <div class="quiz-question">
+            <p>12. Tu veux décider :</p>
+            <label><input type="radio" name="q12" value="prepa"> Plus tard, après 2 ans de formation généraliste</label><br>
+            <label><input type="radio" name="q12" value="selectif"> Relativement vite mais avec quelques années d'exploration</label><br>
+            <label><input type="radio" name="q12" value="but"> Assez tôt, avec une spécialisation claire</label>
+          </div>
+
+          <!-- Q13 -->
+          <div class="quiz-question">
+            <p>13. Tu te sens à l'aise avec les oraux :</p>
+            <label><input type="radio" name="q13" value="prepa"> Oui, débats, khôlles, entretiens ne me font pas peur</label><br>
+            <label><input type="radio" name="q13" value="selectif"> Ça va, avec un peu de préparation</label><br>
+            <label><input type="radio" name="q13" value="but"> Je préfère l'écrit ou les projets</label>
+          </div>
+
+          <!-- Q14 -->
+          <div class="quiz-question">
+            <p>14. Ce qui compte le plus pour toi :</p>
+            <label><input type="radio" name="q14" value="prepa"> Le niveau académique et les débouchés "prestigieux"</label><br>
+            <label><input type="radio" name="q14" value="selectif"> L'équilibre entre intérêt intellectuel et vie perso</label><br>
+            <label><input type="radio" name="q14" value="but"> L'employabilité rapide et la pratique</label>
+          </div>
+
+          <!-- Q15 -->
+          <div class="quiz-question">
+            <p>15. Tu voudrais être accompagné surtout sur :</p>
+            <label><input type="radio" name="q15" value="prepa"> Dossiers et concours très sélectifs</label><br>
+            <label><input type="radio" name="q15" value="selectif"> Choix d'une licence/double licence solide</label><br>
+            <label><input type="radio" name="q15" value="but"> Choix d'un BUT / formation pro qui me corresponde</label>
+          </div>
+
+          <button type="button" class="btn-primary" onclick="calculateResult()">Voir mes pistes d'orientation</button>
+        </form>
+      </div>
+
+      <div id="quizResult" class="card" style="margin-top: 2rem; display: none;">
+        <h2>Ton profil d'orientation</h2>
+        <p id="quizResultText"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Wegrowth – Orientation & réussite scolaire</p>
+  </footer>
+
+  <script>
+    function calculateResult() {
+      const form = document.getElementById('orientationQuiz');
+      const formData = new FormData(form);
+
+      const scores = {
+        prepa: 0,
+        selectif: 0,
+        but: 0,
+        franco: 0
+      };
+
+      // Parcours de toutes les questions
+      for (let [name, value] of formData.entries()) {
+        if (scores[value] !== undefined) {
+          scores[value] += 1;
+        }
+      }
+
+      // Détermination des 2 meilleurs profils
+      const entries = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+      const top1 = entries[0];
+      const top2 = entries[1];
+
+      let message = "";
+
+      // Profils principaux
+      if (top1[0] === "prepa") {
+        message += "<strong>Profil prépa / filières très sélectives</strong> : tu sembles prêt(e) à fournir un travail intense et tu vises des formations exigeantes. Des prépas (ECG, MPSI, etc.) ou des doubles licences sélectives peuvent te convenir.<br><br>";
+      } else if (top1[0] === "selectif") {
+        message += "<strong>Profil licences sélectives / grandes facs</strong> : tu cherches un bon niveau académique avec un certain équilibre. Des licences solides (droit, éco‑gestion, sciences sociales, double licences) sont à explorer.<br><br>";
+      } else if (top1[0] === "but") {
+        message += "<strong>Profil formations professionnalisantes (BUT, BTS, etc.)</strong> : tu sembles très sensible au concret, aux stages et à l'employabilité. Les BUT / BTS bien choisis peuvent très bien te convenir.<br><br>";
+      }
+
+      // Second profil
+      if (top2[1] > 0) {
+        if (top2[0] === "prepa") {
+          message += "En deuxième profil, tu as aussi des traits proches des élèves de prépa : cela peut valoir le coup de regarder quelques parcours très sélectifs.";
+        } else if (top2[0] === "selectif") {
+          message += "En deuxième profil, les licences sélectives / grandes facs ressortent : tu peux viser de bons dossiers dans ces filières.";
+        } else if (top2[0] === "but") {
+          message += "En deuxième profil, les formations professionnalisantes apparaissent aussi : certains BUT / BTS peuvent être de bons plans de sécurité.";
+        } else if (top2[0] === "franco") {
+          message += "Ton intérêt pour l'international et l'allemand ressort : les cursus franco‑allemands (Sciences Po, Paris 1, Assas, CPES, etc.) peuvent être particulièrement adaptés à ton profil.";
+        }
+      }
+
+      // Focus franco‑allemand si score élevé
+      if (scores.franco >= 2) {
+        message += "<br><br><strong>Bonus franco‑allemand</strong> : ton appétence pour l'allemand et l'international est un vrai atout. Les formations franco‑allemandes (droit, sciences sociales, CPES…) sont clairement à creuser.";
+      }
+
+      document.getElementById('quizResultText').innerHTML = message;
+      document.getElementById('quizResult').style.display = "block";
+      document.getElementById('quizResult').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

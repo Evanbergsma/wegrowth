@@ -6,6 +6,169 @@
   <title>Quiz d'orientation – Wegrowth</title>
   <link rel="stylesheet" href="style.css">
 </head>
+      <style>
+        /* Enhanced Quiz Styles */
+        .quiz-question {
+            display: none;
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.4s ease;
+        }
+        
+        .quiz-question.active {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+            animation: slideIn 0.4s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .quiz-progress {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .quiz-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+        
+        .quiz-counter {
+            text-align: center;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .quiz-option {
+            display: block;
+            padding: 1rem;
+            margin: 0.8rem 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .quiz-option:hover {
+            border-color: #4CAF50;
+            background: #f8fff9;
+            transform: translateX(5px);
+        }
+        
+        .quiz-option.selected {
+            border-color: #4CAF50;
+            background: #e8f5e9;
+            font-weight: 500;
+        }
+        
+        .quiz-option input[type="radio"] {
+            margin-right: 0.8rem;
+        }
+        
+        .quiz-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+        
+        .quiz-btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+        
+        .quiz-btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .quiz-btn-primary:hover:not(:disabled) {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .quiz-btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .quiz-btn-secondary:hover:not(:disabled) {
+            background: #e0e0e0;
+        }
+        
+        .quiz-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        #quizResult {
+            animation: fadeIn 0.6s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .result-header {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .result-icon {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-restart {
+            display: block;
+            margin: 2rem auto 0;
+            padding: 0.8rem 2rem;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-restart:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
 <body>
   <!-- Topbar / Navbar identique -->
   <header class="topbar">
@@ -155,10 +318,12 @@
       <div id="quizResult" class="card" style="margin-top: 2rem; display: none;">
         <h2>Ton profil d'orientation</h2>
         <p id="quizResultText"></p>
+                    <button class="btn-restart" onclick="restartQuiz()">🔄 Recommencer le quiz</button>
       </div>
     </section>
   </main>
 
+              <div class="result-icon">🎓</div>
   <footer class="footer">
     <p>© 2025 Wegrowth – Orientation & réussite scolaire</p>
   </footer>
@@ -220,7 +385,37 @@
       document.getElementById('quizResult').style.display = "block";
       document.getElementById('quizResult').scrollIntoView({ behavior: 'smooth' });
  
+
+
+      function restartQuiz() {
+    // Reset all form fields
+    document.getElementById('orientationQuiz').reset();
     
+    // Hide results
+    document.getElementById('quizResult').style.display = 'none';
+    
+    // Reset quiz state
+    currentQuestionIndex = 0;
+    Object.keys(answers).forEach(key => delete answers[key]);
+    
+    // Reset all question states
+    const questions = document.querySelectorAll('.quiz-question');
+    questions.forEach((q, index) => {
+        q.classList.remove('active');
+        const labels = q.querySelectorAll('.quiz-option');
+        labels.forEach(l => l.classList.remove('selected'));
+        if (index === 0) {
+            q.classList.add('active');
+        }
+    });
+    
+    // Update UI
+    updateProgress();
+    updateButtons();
+    
+    // Scroll to top of quiz
+    document.getElementById('orientationQuiz').scrollIntoView({ behavior: 'smooth' });
+}
 // ========== ENHANCED QUIZ FUNCTIONALITY ==========
 // Progressive navigation through questions
 

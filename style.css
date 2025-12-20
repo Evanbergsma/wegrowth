@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 /* Reset simple */
@@ -90,7 +89,8 @@ main { min-height:70vh; }
   font-size: 42px;
   font-weight: 700;
   color: #111111;
-    font-family: 'Libre Bodoni', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+      letter-spacing: -0.08em;
   margin-bottom: 16px;
 }
 
@@ -125,7 +125,8 @@ main { min-height:70vh; }
   font-size: 32px;
   font-weight: 700;
   color: #111111;
-    font-family: 'Libre Bodoni', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+      letter-spacing: -0.08em;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -151,7 +152,8 @@ main { min-height:70vh; }
   font-size: 20px;
   font-weight: 600;
   color: #111111;
-    font-family: 'Libre Bodoni', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+      letter-spacing: -0.08em;
   margin-bottom: 12px;
 }
 
@@ -420,6 +422,7 @@ main { min-height:70vh; }
   font-weight: 600;
   font-size: 18px;
 }
+
 
 
 

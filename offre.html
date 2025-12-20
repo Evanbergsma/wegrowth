@@ -1,179 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos accompagnements – WeGrow</title>
-  <link rel="stylesheet" href="style.css">
-      <script src="includes.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre offre – WeGrow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="includes.js" defer></script>
 </head>
 <body>
-        <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-  <main>
-    <section class="section">
-      <h2>L’orientation d’excellence par des étudiants d’excellence</h2>
-      <p class="center-text">
-        WeGrow propose un ensemble d’accompagnements pensés pour les parents et les lycéens :
-        choisir une voie exigeante mais réaliste, réussir les matières clés et présenter un dossier
-        personnel, clair et percutant.
-      </p>
-    </section>
+    <main>
+        <!-- Hero -->
+        <section class="section">
+            <h2>L'orientation d'excellence par des étudiants d'excellence</h2>
+            <p class="center-text">
+                WeGrow propose un ensemble d'accompagnements pensés pour les parents et les lycéens :<br>
+                choisir une voie exigeante mais réaliste, réussir les matières clés et présenter un dossier personnel, clair et percutant.
+            </p>
+        </section>
 
-    <section class="section section-alt">
-      <h2>Orientation et choix dans l’enseignement supérieur</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Coaching orientation post‑bac</h3>
-          <p>Pour les familles qui veulent sécuriser les choix Parcoursup et hors Parcoursup.</p>
-          <ul>
-            <li>Entretiens d’exploration avec le lycéen et, si besoin, ses parents</li>
-            <li>Décodage des filières, des débouchés et des niveaux de sélectivité</li>
-            <li>Plan de choix structuré et cohérent avec le dossier scolaire</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Sciences Po, Dauphine et grandes institutions</h3>
-          <p>Accompagnement spécifique pour les formations très sélectives.</p>
-          <ul>
-            <li>Analyse du profil et des forces à mettre en avant</li>
-            <li>Préparation des entretiens (simulations et retours détaillés)</li>
-            <li>Construction du discours de motivation et cohérence du projet</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+        <!-- 1. Orientation & choix -->
+        <section class="section section-alt">
+            <h2>Orientation & choix post-bac</h2>
+            <div class="offer-grid">
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Coaching orientation post‑bac</h3>
+                    <p class="tagline">Clarifier le projet, sécuriser Parcoursup et les choix hors Parcoursup.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Entretiens d'exploration avec le lycéen et, si besoin, ses parents</li>
+                            <li>Décodage des filières, des débouchés et des niveaux de sélectivité</li>
+                            <li>Plan de choix structuré et cohérent avec le dossier scolaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section">
-      <h2>Préparation aux examens et prise d’avance</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Préparation TOEFL & IELTS</h3>
-          <p>Pour les élèves qui visent des programmes internationaux ou des doubles diplômes.</p>
-          <ul>
-            <li>Diagnostic de niveau et objectifs réalistes</li>
-            <li>Stratégies par type de question et entraînement ciblé</li>
-            <li>Plan de travail structuré sur plusieurs semaines</li>
-          </ul>
-        </article>
+        <!-- 2. Préparation de dossiers & entretiens -->
+        <section class="section">
+            <h2>Préparation de dossiers & entretiens sélectifs</h2>
+            <div class="offer-grid">
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Dossiers Sciences Po, Dauphine, IEP</h3>
+                    <p class="tagline">Sélection des expériences, rédaction des réponses, cohérence du projet.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Analyse du profil et des forces à mettre en avant</li>
+                            <li>Sélection des expériences pertinentes et construction du discours</li>
+                            <li>Rédaction et relecture des réponses aux questions ouvertes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Entretiens oraux & oraux de motivation</h3>
+                    <p class="tagline">Simulations, feedback détaillé, structuration du discours.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Préparation des entretiens : simulations et retours détaillés</li>
+                            <li>Structuration du discours de motivation et cohérence du projet</li>
+                            <li>Gestion du stress et entraînement aux questions imprévues</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Parcours sélectifs & doubles diplômes</h3>
+                    <p class="tagline">Positionner le profil, valoriser les points forts et gérer les faiblesses.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Stratégie pour se différencier sur les parcours très sélectifs</li>
+                            <li>Préparation spécifique pour doubles diplômes franco-allemands, internationaux</li>
+                            <li>Valorisation des expériences atypiques ou des parcours non linéaires</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="card">
-          <h3>Maths – spécialité et bac de première</h3>
-          <p>Consolider la spécialité maths et préparer le bac de première pour garder des portes ouvertes.</p>
-          <ul>
-            <li>Révision des chapitres clés de la spécialité</li>
-            <li>Annales, méthodes et rédaction attendue au bac</li>
-            <li>Stratégie pour éviter les “mauvaises surprises” le jour J</li>
-          </ul>
-        </article>
+        <!-- 3. Préparation académique & examens -->
+        <section class="section section-alt">
+            <h2>Préparation académique & examens</h2>
+            <div class="offer-grid">
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Préparation TOEFL / IELTS</h3>
+                    <p class="tagline">Diagnostic, stratégie par épreuve, plan de travail sur plusieurs semaines.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Diagnostic de niveau et objectifs réalistes</li>
+                            <li>Stratégies par type de question et entraînement ciblé</li>
+                            <li>Plan de travail structuré sur plusieurs semaines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Maths (spécialité & bac de première)</h3>
+                    <p class="tagline">Révision ciblée, annales, rédaction attendue au bac.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Révision des chapitres clés de la spécialité</li>
+                            <li>Annales, méthodes et rédaction attendue au bac</li>
+                            <li>Stratégie pour éviter les mauvaises surprises le jour J</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Intro maths & économie</h3>
+                    <p class="tagline">Bases quantitatives pour réussir en éco, sciences sociales, data.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Notions de base en mathématiques appliquées aux sciences sociales</li>
+                            <li>Premiers outils de raisonnement quantitatif utiles dans le supérieur</li>
+                            <li>Mise en pratique avec des cas concrets et des exercices simples</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Géopolitique (HGGSP)</h3>
+                    <p class="tagline">Fiches synthétiques, méthode des épreuves, entraînements guidés.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Fiches de géopolitique synthétiques et claires</li>
+                            <li>Méthodologie des épreuves écrites et orales</li>
+                            <li>Entraînements guidés sur des sujets types</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Allemand & parcours franco‑allemands</h3>
+                    <p class="tagline">Renforcement des bases, oral, questions typiques d'entretien.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Renforcement des bases et des automatismes</li>
+                            <li>Préparation à l'oral pour gagner en confiance</li>
+                            <li>Entraînement aux questions typiques d'entretien et de motivation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Bases Excel / Sheets</h3>
+                    <p class="tagline">Outils essentiels pour les études de gestion, économie et sciences sociales.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Manipulation simple de données (filtres, formules de base)</li>
+                            <li>Organisation de tableaux pour les révisions ou projets</li>
+                            <li>Préparation aux attentes des études de gestion, économie et sciences sociales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="card">
-          <h3>Introduction aux maths et à l’économie</h3>
-          <p>Prendre une longueur d’avance sur les études supérieures (économie, sciences sociales, données).</p>
-          <ul>
-            <li>Notions de base en mathématiques appliquées aux sciences sociales</li>
-            <li>Premiers outils de raisonnement quantitatif utiles dans le supérieur</li>
-            <li>Mise en pratique avec des cas concrets et des exercices simples</li>
-          </ul>
-        </article>
+        <!-- 4. CV, lettres & profils atypiques -->
+        <section class="section">
+            <h2>CV, lettres & profils atypiques</h2>
+            <div class="offer-grid">
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>CV Parcoursup & post‑bac</h3>
+                    <p class="tagline">Templates adaptés aux lycéens, choix du bon format selon le projet.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Différents formats selon le profil et le projet</li>
+                            <li>Conseils pour choisir le bon modèle et mettre en valeur les expériences</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Lettres de motivation différenciantes</h3>
+                    <p class="tagline">Éviter le ton généré par l'IA, mettre en avant ce qui rend l'élève unique.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Relecture et réécriture pour éviter les lettres standardisées par l'IA</li>
+                            <li>Mise en avant des éléments différenciants du profil</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Accompagnement LinkedIn lycéen</h3>
+                    <p class="tagline">Profil professionnel sobre, premiers réseaux pertinents à développer.</p>
+                    <div class="offer-detail">
+                        <ul>
+                            <li>Création ou optimisation du profil LinkedIn</li>
+                            <li>Premiers réseaux et contacts pertinents à développer</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offer-card" onclick="toggleDetail(this)">
+                    <h3>Accompagnement profils atypiques</h3>
+                    <p class="tagline">Parcours atypiques, troubles d'apprentissage, scolarité compliquée.</p>
+                    <div class="offer-detail">
+                        <p><strong>Comprendre le parcours :</strong> Prendre le temps de comprendre l'histoire scolaire et le fonctionnement de l'élève. Échanges approfondis avec la famille, identification des points d'appui et des difficultés.</p>
+                        <p><strong>Simplifier les démarches :</strong> Rendre lisibles les étapes clés (orientation, aménagements, dossiers). Explications simples, supports écrits pour suivre les étapes.</p>
+                        <p><strong>Construire un projet réaliste :</strong> Articuler les contraintes, les envies et les possibilités du système. Scénarios d'orientation adaptés, échanges réguliers pour ajuster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <article class="card">
-          <h3>Géopolitique et fiches de cours</h3>
-          <p>Réussir le bac de HGGSP et structurer sa culture générale.</p>
-          <ul>
-            <li>Fiches de géopolitique synthétiques et claires</li>
-            <li>Méthodologie des épreuves écrites et orales</li>
-            <li>Entraînements guidés sur des sujets types</li>
-          </ul>
-        </article>
+    <div id="footer-placeholder"></div>
 
-        <article class="card">
-          <h3>Allemand & parcours franco‑allemands</h3>
-          <p>Faire de l’allemand un vrai atout pour les formations franco‑allemandes.</p>
-          <ul>
-            <li>Renforcement des bases et des automatismes</li>
-            <li>Préparation à l’oral pour gagner en confiance</li>
-            <li>Entraînement aux questions typiques d’entretien et de motivation</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Bases Excel / Sheets</h3>
-          <p>Découvrir les outils de base (Excel / Google Sheets) utiles dans la plupart des études supérieures.</p>
-          <ul>
-            <li>Manipulation simple de données (filtres, formules de base)</li>
-            <li>Organisation de tableaux pour les révisions ou projets</li>
-            <li>Préparation aux attentes des études de gestion, économie et sciences sociales</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <h2>CV, lettres et image en ligne</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Templates de CV</h3>
-          <p>Des modèles pensés pour les lycéens, adaptés aux candidatures Parcoursup et post‑bac.</p>
-          <ul>
-            <li>Différents formats selon le profil et le projet</li>
-            <li>Conseils pour choisir le bon modèle</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>CV et lettres de motivation personnalisés</h3>
-          <p>Rédiger un CV et des lettres qui reflètent vraiment les expériences et les ambitions de l’élève.</p>
-          <ul>
-            <li>Relecture et réécriture pour éviter les lettres standardisées par l’IA</li>
-            <li>Mise en avant des éléments différenciants du profil</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Accompagnement LinkedIn</h3>
-          <p>Construire un profil professionnel dès le lycée, sans en faire trop.</p>
-          <ul>
-            <li>Création ou optimisation du profil</li>
-            <li>Premiers réseaux et contacts pertinents à développer</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Accompagnement des profils atypiques</h2>
-      <p class="center-text">
-        Un accompagnement dédié aux élèves dont le parcours ne rentre pas dans les cases : enfants autistes,
-        profils avec troubles d’apprentissage ou scolarité plus compliquée.
-      </p>
-      <div class="cards">
-        <article class="card">
-          <h3>Comprendre le parcours</h3>
-          <p>Prendre le temps de comprendre l’histoire scolaire et le fonctionnement de l’élève.</p>
-          <ul>
-            <li>Échanges approfondis avec la famille</li>
-            <li>Identification des points d’appui et des difficultés</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Simplifier les démarches</h3>
-          <p>Rendre lisibles les étapes clés (orientation, aménagements, dossiers).</p>
-          <ul>
-            <li>Explications simples des démarches et des échéances</li>
-            <li>Supports écrits pour suivre les étapes sans se perdre</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Construire un projet réaliste</h3>
-          <p>Articuler les contraintes, les envies et les possibilités du système.</p>
-          <ul>
-            <li>Scénarios d’orientation adaptés au rythme de l’élève</li>
-            <li>Échanges réguliers pour ajuster si besoin</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-  </main>
-
-      <div id="footer-placeholder"></div>
+    <script>
+        function toggleDetail(card) {
+            card.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

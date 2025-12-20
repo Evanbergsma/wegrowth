@@ -45,16 +45,17 @@
             <h2>Parlons de votre situation</h2>
             <p class="center-text">Laissez‑nous un message, nous revenons vers vous sous 24h.</p>
             
+                <            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6c57795a-af13-47fb-a404-16799191344b">
                 <div class="form-row">
                     <input type="text" name="name" placeholder="Nom et prénom" required>
-                    <input type="email" name="email" placeholder="E‑mail" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
                 </div>
-                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                                            <input type="hidden" name="access_key" value="6c57795a-af13-47fb-a404-16799191344b">
                 <input type="text" name="subject" placeholder="Classe / besoin principal" required>
                 <textarea name="message" rows="4" placeholder="Expliquez votre situation en quelques lignes." required></textarea>
                 <button type="submit" class="btn-primary">Envoyer ma demande</button>
                 <p id="form-status" class="center-text" style="margin-top: 15px; font-weight: bold;"></p>
+            </form>p id="form-status" class="center-text" style="margin-top: 15px; font-weight: bold;"></p>
             </form>
         </section>
     </main>
@@ -63,6 +64,7 @@
 </body>
 </html>
         
+
 
 
 

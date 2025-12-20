@@ -51,8 +51,7 @@ main { min-height:70vh; }
 .main-nav a {
   text-decoration: none;
   color: #111111;
-  font-weight: 500;
-  font-size: 15px;
+    font-weight: 700;  font-size: 15px;
    font-family: 'Times New Roman', Times, serif;
    letter-spacing: -0.03em;
 }
@@ -426,6 +425,7 @@ main { min-height:70vh; }
   font-weight: 600;
   font-size: 18px;
 }
+
 
 
 

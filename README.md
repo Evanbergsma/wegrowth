@@ -1,1 +1,1 @@
-# wegrowth
+# WeGrow

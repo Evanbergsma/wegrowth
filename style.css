@@ -27,7 +27,7 @@ main { min-height:70vh; }
   justify-content: space-between;
   padding: 12px 48px;
   border-bottom: 1px solid #E0D5C8;
-  background-color: ##E8DFD0;
+  background-color: #E8DFD0;
 }
 
 .logo-link {
@@ -130,7 +130,7 @@ main { min-height:70vh; }
 }
 
 .section-alt {
-  background-color: ##E8DFD0;
+  background-color: #E8DFD0;
 }
 
 .section h2 {
@@ -553,6 +553,7 @@ main { min-height:70vh; }
     color: #1d1d1f;
     font-weight: 600;
 }
+
 
 
 

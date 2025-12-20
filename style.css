@@ -56,6 +56,15 @@ main { min-height:70vh; }
       letter-spacing: -0.03em;
 }
 
+.main-nav a {
+  transition: all 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #555555;
+  transform: translateY(-1px);
+}
+
 .main-nav a:hover {
   color: #555555;
 }
@@ -145,10 +154,18 @@ main { min-height:70vh; }
 }
 
 .card {
+    transition: all 0.3s ease;
+  cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 32px;
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .card h3 #E0D5C8
@@ -168,12 +185,19 @@ main { min-height:70vh; }
 /* BUTTONS */
 
 .btn-primary, .btn-secondary {
+    transition: all 0.2s ease;
+  cursor: pointer;
   display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .btn-primary {
@@ -529,5 +553,6 @@ main { min-height:70vh; }
     color: #1d1d1f;
     font-weight: 600;
 }
+
 
 

@@ -9,10 +9,7 @@
       <style>
         /* Enhanced Quiz Styles */
         .quiz-question {
-            display: none;
-            opacity: 0;
-            transform: translateX(30px);
-            transition: all 0.4s ease;
+            display: block;: none;
         }
         
         .quiz-question.active {
@@ -520,10 +517,10 @@ function updateButtons() {
 }
 
 // Initialize on page load
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initQuiz);
-} else {
-  initQuiz();
+// if (document.readyState === 'loading') {
+//   document.addEventListener('DOMContentLoaded', initQuiz);
+// } else {
+  // initQuiz();
 }}
   </script>
 </body>

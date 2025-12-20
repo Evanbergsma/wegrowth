@@ -219,7 +219,117 @@
       document.getElementById('quizResultText').innerHTML = message;
       document.getElementById('quizResult').style.display = "block";
       document.getElementById('quizResult').scrollIntoView({ behavior: 'smooth' });
+ 
+    
+// ========== ENHANCED QUIZ FUNCTIONALITY ==========
+// Progressive navigation through questions
+
+let currentQuestionIndex = 0;
+const totalQuestions = 15;
+const answers = {};
+
+function initQuiz() {
+  // Hide all questions initially
+  const questions = document.querySelectorAll('.quiz-question');
+  questions.forEach((q, index) => {
+    q.dataset.questionNumber = index + 1;
+    if (index === 0) {
+      q.classList.add('active');
     }
+  });
+  
+  // Add navigation
+  const form = document.getElementById('orientationQuiz');
+  const navHTML = `
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar" id="progressBar" style="width: 6.67%"></div>
+    </div>
+    <div class="quiz-counter" id="questionCounter">Question 1 / 15</div>
+    <div id="quiz-container"></div>
+    <div class="quiz-nav">
+      <button type="button" class="quiz-btn quiz-btn-secondary" id="prevBtn" onclick="navigateQuiz(-1)" disabled>Précédent</button>
+      <button type="button" class="quiz-btn quiz-btn-primary" id="nextBtn" onclick="navigateQuiz(1)">Suivant</button>
+    </div>
+  `;
+  
+  // Wrap labels in clickable divs
+  questions.forEach(q => {
+    const labels = q.querySelectorAll('label');
+    labels.forEach(label => {
+      const radio = label.querySelector('input[type="radio"]');
+      label.classList.add('quiz-option');
+      label.addEventListener('click', () => {
+        // Remove selected class from siblings
+        labels.forEach(l => l.classList.remove('selected'));
+        label.classList.add('selected');
+        radio.checked = true;
+        
+        // Enable next button
+        document.getElementById('nextBtn').disabled = false;
+      });
+    });
+  });
+}
+
+function navigateQuiz(direction) {
+  const questions = document.querySelectorAll('.quiz-question');
+  const currentQ = questions[currentQuestionIndex];
+  
+  // Save current answer
+  const selected = currentQ.querySelector('input[type="radio"]:checked');
+  if (selected) {
+    answers[selected.name] = selected.value;
+  }
+  
+  // Hide current question
+  currentQ.classList.remove('active');
+  
+  // Update index
+  currentQuestionIndex += direction;
+  
+  // Show new question
+  if (currentQuestionIndex < questions.length) {
+    questions[currentQuestionIndex].classList.add('active');
+    updateProgress();
+    updateButtons();
+  } else if (currentQuestionIndex >= questions.length) {
+    // Last question - show results
+    calculateResult();
+  }
+}
+
+function updateProgress() {
+  const progress = ((currentQuestionIndex + 1) / totalQuestions) * 100;
+  document.getElementById('progressBar').style.width = progress + '%';
+  document.getElementById('questionCounter').textContent = `Question ${currentQuestionIndex + 1} / ${totalQuestions}`;
+}
+
+function updateButtons() {
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  
+  // Update prev button
+  prevBtn.disabled = currentQuestionIndex === 0;
+  
+  // Update next button text and state
+  if (currentQuestionIndex === totalQuestions - 1) {
+    nextBtn.textContent = 'Voir mes résultats';
+  } else {
+    nextBtn.textContent = 'Suivant';
+  }
+  
+  // Check if current question is answered
+  const currentQ = document.querySelectorAll('.quiz-question')[currentQuestionIndex];
+  const isAnswered = currentQ.querySelector('input[type="radio"]:checked') !== null;
+  nextBtn.disabled = !isAnswered;
+}
+
+// Initialize on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initQuiz);
+} else {
+  initQuiz();
+}}
   </script>
 </body>
 </html>

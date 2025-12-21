@@ -1,258 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'équipe – WeGrow</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="includes.js" defer></script>
-    <style>
-        /* Enhanced Team Section Styles */
-        .team-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-        }
-        
-        .team-intro h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-        
-        .team-intro p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-        }
-        
-        .team-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .team-card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .team-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #111111, #111111);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-        
-        .team-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .team-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        }
-        
-        .team-card h3 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .team-card .subtitle {
-            color: #111111;
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-        
-        .team-card .description {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-        
-        .achievements {
-            list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
-        }
-        
-        .achievements li {
-            padding: 0.6rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: #444;
-            font-size: 0.95rem;
-        }
-        
-        .achievements li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #111111;
-            font-weight: bold;
-        }
-        
-        .linkedin-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: #0077B5;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-        }
-        
-        .linkedin-btn:hover {
-            background: #005885;
-            transform: translateX(5px);
-        }
-        
-        .linkedin-icon {
-            width: 20px;
-            height: 20px;
-        }
-        
-        .highlight-box {
-            background: #f8f9fa;
-            border-left: 4px solid #111111;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .highlight-box h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        
-        .highlight-box p {
-            color: #555;
-            line-height: 1.7;
-        }
-        
-        @media (max-width: 768px) {
-            .team-cards {
-                grid-template-columns: 1fr;
-            }
-            
-            .team-intro h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'équipe – WeGrow</title>
+  <link rel="stylesheet" href="design-system.css?v=2">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="includes.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+  <div id="header-placeholder"></div>
+  
+  <main>
+    <!-- Intro équipe -->
+    <section class="section">
+      <div class="section-container">
+        <h2>L'équipe WeGrow</h2>
+        <p class="section-intro">
+          Trois étudiants du programme franco‑allemand de Dauphine qui ont traversé Parcoursup, les concours
+          et les filières sélectives. Nous parlons votre langage et mettons notre expérience au service de votre réussite.
+        </p>
+      </div>
+    </section>
     
-    <main>
-        <section class="section">
-            <div class="team-intro">
-                <h1>L'équipe WeGrow</h1>
-                <p>Trois étudiants du programme franco-allemand de Dauphine qui ont traversé Parcoursup, les concours et les filières sélectives. Nous parlons votre langage et mettons notre expérience au service de votre réussite.</p>
-            </div>
-        </section>
-        
-        <section class="section section-alt">
-            <div class="team-cards">
-                <!-- Evan Bergsma -->
-                <article class="team-card">
-                    <h3>Evan Bergsma</h3>
-                    <div class="subtitle">Double Bachelor Dauphine-PSL / Goethe Frankfurt</div>
-                    <div class="description">
-                        Spécialiste de l'orientation vers les doubles-cursus franco-allemands et les parcours internationaux très sélectifs.
-                    </div>
-                    <ul class="achievements">
-                        <li>Baccalauréat franco-allemand (mention très bien)</li>
-                        <li>Admis Sciences Po Paris</li>
-                        <li>Admis double licence Droit franco-allemand Paris 1 Panthéon-Sorbonne</li>
-                        <li>Expert parcours internationaux et double-cursus</li>
-                    </ul>
-                    <a href="https://www.linkedin.com/in/evan-bergsma" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                        <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        Profil LinkedIn
-                    </a>
-                </article>
-                
-                <!-- Victor Dürner -->
-                <article class="team-card">
-                    <h3>Victor Dürner</h3>
-                    <div class="subtitle">Étudiant Dauphine-PSL</div>
-                    <div class="description">
-                        Expert en géopolitique, méthodologie du bac et stratégie d'intégration dans les filières de droit et sciences sociales.
-                    </div>
-                    <ul class="achievements">
-                        <li>Double cursus AbiBac (mention très bien)</li>
-                        <li>Admis en CPES Henri-IV</li>
-                        <li>Admis Droit Paris 1 Panthéon-Sorbonne et Paris-Panthéon-Assas</li>
-                        <li>20/20 à l'épreuve de spécialité HGGSP</li>
-                    </ul>
-                    <a href="https://www.linkedin.com/in/victor-durner-0b092a334/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                        <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        Profil LinkedIn
-                    </a>
-                </article>
-                
-                <!-- Nino Cangialosi -->
-                <article class="team-card">
-                    <h3>Nino Cangialosi</h3>
-                    <div class="subtitle">Double Bachelor Dauphine-PSL / Goethe Frankfurt</div>
-                    <div class="description">
-                        Spécialiste géopolitique, allemand et préparation aux filières très exigeantes (CPES, classes préparatoires).
-                    </div>
-                    <ul class="achievements">
-                        <li>Double cursus AbiBac (mention très bien)</li>
-                        <li>Admis en CPES Henri-IV</li>
-                        <li>20/20 à l'épreuve de spécialité HGGSP</li>
-                        <li>20/20 à l'épreuve de spécialité SES</li>
-                        <li>114/120 au TOEFL</li>
-                    </ul>
-                    <a href="https://www.linkedin.com/in/ninocangialosi/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                        <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        Profil LinkedIn
-                    </a>
-                </article>
-            </div>
-        </section>
-        
-        <section class="section">
-            <div class="highlight-box">
-                <h2>Une équipe qui comprend vos enjeux</h2>
-                <p>
-                    Nous sommes passés par les mêmes épreuves que vous : dossiers Parcoursup, oraux de concours, choix stratégiques d'orientation. Nous savons exactement ce qu'il faut pour réussir dans les filières sélectives et nous adaptons notre accompagnement à votre profil et vos ambitions.
-                </p>
-                <p style="margin-top: 1rem;">
-                    <strong>Notre promesse :</strong> Des conseils concrets, une méthodologie éprouvée et un accompagnement personnalisé pour maximiser vos chances de réussite.
-                </p>
-            </div>
-        </section>
-    </main>
-    
-    <div id="footer-placeholder"></div>
+    <!-- Cartes équipe -->
+    <section class="section">
+      <div class="section-container">
+        <div class="cards">
+          <!-- Evan -->
+          <article class="card">
+            <div class="card-icon">ORIENTATION</div>
+            <h3>Evan Bergsma</h3>
+            <p>
+              Double Bachelor Dauphine‑PSL / Goethe Frankfurt. Spécialiste des doubles cursus franco‑allemands
+              et des parcours internationaux très sélectifs.
+            </p>
+            <ul class="achievements">
+              <li>Baccalauréat franco‑allemand (mention très bien)</li>
+              <li>Admis Sciences Po Paris</li>
+              <li>Admis double licence Droit franco‑allemand Paris 1 Panthéon‑Sorbonne</li>
+              <li>Expert parcours internationaux et double‑cursus</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/evan-bergsma" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+              <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              Profil LinkedIn
+            </a>
+          </article>
+
+          <!-- Victor -->
+          <article class="card">
+            <div class="card-icon">GÉOPOLITIQUE</div>
+            <h3>Victor Dürner</h3>
+            <p>
+              Étudiant Dauphine‑PSL, expert en géopolitique, méthodologie du bac et stratégie d’intégration
+              dans les filières de droit et de sciences sociales.
+            </p>
+            <ul class="achievements">
+              <li>Double cursus AbiBac (mention très bien)</li>
+              <li>Admis en CPES Henri‑IV</li>
+              <li>Admis Droit Paris 1 Panthéon‑Sorbonne et Paris‑Panthéon‑Assas</li>
+              <li>20/20 à l'épreuve de spécialité HGGSP</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/victor-durner-0b092a334/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+              <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              Profil LinkedIn
+            </a>
+          </article>
+
+          <!-- Nino -->
+          <article class="card">
+            <div class="card-icon">EXCELLENCE</div>
+            <h3>Nino Cangialosi</h3>
+            <p>
+              Double Bachelor Dauphine‑PSL / Goethe Frankfurt. Spécialiste géopolitique, allemand et préparation
+              aux filières très exigeantes (CPES, classes préparatoires).
+            </p>
+            <ul class="achievements">
+              <li>Double cursus AbiBac (mention très bien)</li>
+              <li>Admis en CPES Henri‑IV</li>
+              <li>20/20 à l'épreuve de spécialité HGGSP</li>
+              <li>20/20 à l'épreuve de spécialité SES</li>
+              <li>114/120 au TOEFL</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/ninocangialosi/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+              <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              Profil LinkedIn
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight / promesse -->
+    <section class="section">
+      <div class="section-container">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            « Nous sommes passés par les mêmes épreuves que vous : dossiers Parcoursup, oraux de concours,
+            choix stratégiques d'orientation. »
+          </p>
+          <p class="testimonial-author">
+            Notre promesse : des conseils concrets, une méthodologie éprouvée et un accompagnement personnalisé
+            pour maximiser vos chances de réussite.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div id="footer-placeholder"></div>
 </body>
 </html>

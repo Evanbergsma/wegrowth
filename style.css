@@ -105,3 +105,55 @@ from{opacity:0;transform:translateY(20px)}
 to{opacity:1;transform:translateY(0)}
 }
 .hero,.section{animation:fadeIn var(--transition-slow) ease-out}
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background-color:var(--color-white);
+  border-bottom:var(--border-width) solid var(--color-border);
+  height:var(--header-height);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 var(--space-6);
+}
+.logo-link{
+  display:flex;
+  align-items:center;
+}
+.logo{
+  height:32px; /* ajuste si tu veux plus grand/petit */
+  width:auto;
+  display:block;
+}
+.main-nav{
+  display:flex;
+  gap:var(--space-8);
+  align-items:center;
+}
+.main-nav a{
+  font-size:var(--text-sm);
+  font-weight:var(--weight-medium);
+  letter-spacing:-0.05em;
+  color:var(--color-text-secondary);
+  text-decoration:none;
+}
+.main-nav a:hover{
+  color:var(--color-text);
+}
+.header-cta{
+  padding:var(--space-3) var(--space-6);
+  background-color:var(--color-text);
+  color:var(--color-white);
+  border-radius:var(--radius-full);
+  font-size:var(--text-sm);
+  font-weight:var(--weight-semibold);
+  letter-spacing:-0.06em;
+  text-decoration:none;
+}
+.header-cta:hover{
+  background-color:var(--color-accent);
+}
+
+

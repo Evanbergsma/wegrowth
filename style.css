@@ -457,6 +457,88 @@ footer a:hover{
   margin-top: 2rem;
 }
 
+/* ========= HERO PREMIUM — LUXE TECH ========= */
+.hero{
+  padding:8rem 1.5rem 6rem; /* plus d'air = luxe */
+  text-align:center;
+  background-color:var(--color-base);
+}
+
+.hero-content{
+  max-width:46rem; /* plus large = statutaire */
+  margin:0 auto;
+}
+
+.hero h1{
+  font-family:var(--font-display);
+  font-size:3.2rem; /* impact keynote */
+  font-weight:var(--weight-bold);
+  letter-spacing:-0.08em;
+  line-height:1.05;
+  color:var(--color-text);
+  margin-bottom:1.2rem;
+}
+
+.hero-subtitle{
+  font-size:1.15rem;
+  font-weight:var(--weight-normal);
+  letter-spacing:-0.02em;
+  line-height:1.75;
+  color:var(--color-text-secondary);
+  max-width:36rem;
+  margin:0 auto 3.5rem;
+}
+
+.hero-actions{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* ========= BOUTONS HERO PREMIUM ========= */
+.btn-primary, .btn-secondary{
+  border-radius:999px;
+  transition:all var(--transition-base);
+}
+
+.btn-primary{
+  padding:1rem 3.2rem;
+  font-size:1rem;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px rgba(0,0,0,0.18);
+}
+
+.btn-secondary{
+  padding:0.9rem 2.8rem;
+}
+
+/* ========= SEPARATION HERO / SECTIONS ========= */
+.hero + .section{
+  border-top:1px solid rgba(255,255,255,0.06); /* ultra léger */
+  padding-top:6rem; /* respiration luxueuse */
+}
+
+/* ========= RESPONSIVE HERO ========= */
+@media(max-width:768px){
+  .hero{
+    padding:6rem 1.25rem 4rem;
+  }
+  .hero h1{
+    font-size:2.4rem;
+  }
+  .hero-subtitle{
+    font-size:1rem;
+    margin-bottom:2.5rem;
+  }
+  .hero-actions{
+    gap:0.75rem;
+  }
+}
 
 
 

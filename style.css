@@ -564,3 +564,244 @@ main, .hero, .section {
 
 
 
+
+
+
+/* ============================================
+   APPLE-STYLE ENHANCEMENTS
+   Styles complémentaires utilisant design-system.css
+============================================ */
+
+/* Hero Section - Style Apple */
+.hero {
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+    background-color: var(--color-primary-beige);
+    text-align: left;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-black);
+    font-family: var(--font-family-display);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height-tight);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-neutral-gray);
+    margin-bottom: var(--spacing-xl);
+    line-height: var(--line-height-relaxed);
+    font-family: var(--font-family-body);
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+/* Section Containers */
+.section {
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+}
+
+.section-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.section-container-narrow {
+    max-width: var(--form-max-width);
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-black);
+    font-family: var(--font-family-display);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: var(--font-size-md);
+    color: var(--color-neutral-gray);
+    margin-bottom: var(--spacing-xl);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Cards avec icônes */
+.card-icon {
+    font-size: 48px;
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-neutral-black);
+    font-family: var(--font-family-display);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-gray);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Steps Section */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-xl);
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--border-radius-full);
+    background-color: var(--color-neutral-black);
+    color: var(--color-neutral-white);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-display);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.step h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-neutral-black);
+    font-family: var(--font-family-display);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step p {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-gray);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Testimonial Section */
+.section-testimonial {
+    background-color: var(--color-bg-light);
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+}
+
+.testimonial {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.testimonial-text {
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    color: var(--color-neutral-dark);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-lg);
+    font-family: var(--font-family-display);
+}
+
+.testimonial-author {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-gray);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Contact/CTA Section */
+.section-cta {
+    background-color: var(--color-neutral-white);
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: var(--border-width) solid var(--color-border-light);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-base);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-neutral-black);
+}
+
+/* Button Submit */
+.btn-submit {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 300" width="950" height="300">
+  <style>
+    .logo-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 200px;
+      font-weight: 700;
+      fill: #000000;
+      letter-spacing: -8px;
+    }
+  </style>
+  <text x="10" y="220" class="logo-text">we grow</text>
+</svg>

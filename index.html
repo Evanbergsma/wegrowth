@@ -3,71 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeGrow – Orientation & réussite scolaire</title>
+    <title>WeGrow — Apprendre, grandir, s'épanouir</title>
+    <link rel="stylesheet" href="design-system.css">
     <link rel="stylesheet" href="style.css">
-        <script src="includes.js" defer></script>
+    <script src="includes.js" defer></script>
 </head>
 <body>
-        <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
     <main>
+        <!-- Hero Section - Style Apple -->
         <section class="hero">
             <div class="hero-content">
-                <h1>L'excellence de l'orientation par des étudiants d'excellence.</h1>
-                <p>WeGrow accompagne les lycéens et leurs familles dans les choix post‑bac, la préparation des examens et la construction d'un dossier académique solide.</p>
+                <h1>Apprendre, grandir, s'épanouir</h1>
+                <p class="hero-subtitle">WeGrow accompagne lycéens et étudiants dans leur orientation et réussite académique.</p>
                 <div class="hero-actions">
-                    <a href="offre.html" class="btn-primary">Voir tout ce que nous offrons</a>
-                    <a href="equipe.html" class="btn-secondary">Découvrir qui nous sommes</a>
+                    <a href="#contact" class="btn-primary">Commencer</a>
+                    <a href="offre.html" class="btn-secondary">Découvrir l'offre</a>
                 </div>
-                <p class="hero-note">Un accompagnement conçu par des étudiants du programme franco‑allemand de Dauphine.</p>
             </div>
         </section>
 
-        <section class="section">
-            <h2>Ce que WeGrow apporte</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Orientation post‑bac</h3>
-                    <p>Clarifier le projet, viser juste et éviter les choix par défaut.</p>
-                </article>
-                <article class="card">
-                    <h3>Réussite aux examens</h3>
-                    <p>Maths, géopolitique, langues : consolider les matières stratégiques.</p>
-                </article>
-                <article class="card">
-                    <h3>Dossiers et image en ligne</h3>
-                    <p>CV, lettres, LinkedIn : sortir du lot à l'ère de l'IA.</p>
-                </article>
+        <!-- Section Pourquoi WeGrow -->
+        <section class="section section-why">
+            <div class="section-container">
+                <h2>Pourquoi WeGrow ?</h2>
+                <p class="section-intro">Un accompagnement personnalisé par des étudiants d'excellence.</p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Orientation claire</h3>
+                        <p>Construis ton projet post-bac avec méthode et ambition.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Réussite aux examens</h3>
+                        <p>Maîtrise les matières stratégiques : maths, langues, géopolitique.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">✨</div>
+                        <h3>Dossier d'excellence</h3>
+                        <p>CV, lettres de motivation, LinkedIn : sors du lot.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="section section-alt">
-            <h2>Parlons de votre situation</h2>
-            <p class="center-text">Laissez‑nous un message, nous revenons vers vous sous 24h.</p>
-            
-                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="6c57795a-af13-47fb-a404-16799191344b">
-                <div class="form-row">
-                    <input type="text" name="name" placeholder="Nom et prénom" required>
-                    <input type="email" name="email" placeholder="E-mail" required>
+        <!-- Section Comment ça marche -->
+        <section class="section section-how">
+            <div class="section-container">
+                <h2>Comment ça marche ?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Première discussion</h3>
+                        <p>On analyse ta situation et tes objectifs.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Programme sur mesure</h3>
+                        <p>Création d'un plan d'action adapté à tes besoins.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Suivi régulier</h3>
+                        <p>Séances, révisions, ajustements jusqu'au succès.</p>
+                    </div>
                 </div>
-                <input type="text" name="subject" placeholder="Classe / besoin principal" required>
-                <textarea name="message" rows="4" placeholder="Expliquez votre situation en quelques lignes." required></textarea>
-                <button type="submit" class="btn-primary">Envoyer ma demande</button>
-            </form>
-                            <p id="form-status" class="center-text" style="margin-top: 15px; font-weight: bold;"></p>
+            </div>
+        </section>
+
+        <!-- Section Temoignage (optionnel) -->
+        <section class="section section-testimonial">
+            <div class="section-container-narrow">
+                <blockquote class="testimonial">
+                    <p class="testimonial-text">« Grâce à WeGrow, j'ai obtenu une place en prépa HEC. L'accompagnement personnalisé a fait toute la différence. »</p>
+                    <cite class="testimonial-author">— Clara, admise à Ginette</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Section Contact / Newsletter -->
+        <section id="contact" class="section section-cta">
+            <div class="section-container-narrow">
+                <h2>Prêt à commencer ?</h2>
+                <p class="section-intro">Laisse-nous un message, nous te recontactons sous 24h.</p>
+                
+                <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="6c57795a-af13-47fb-a404-16799191344b">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nom et prénom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Classe / Situation" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="Raconte-nous ta situation en quelques lignes..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-submit">Envoyer ma demande</button>
+                </form>
+            </div>
         </section>
     </main>
 
-        <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 </body>
 </html>
-        
-
-
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 /*
 =====================================================
-  WEGROW DESIGN SYSTEM - CHARTE GRAPHIQUE
+  WEGROW DESIGN SYSTEM - CHARTE GRAPHIQUE FT
+  Palette inspirée du Financial Times
 =====================================================
   Ce fichier centralise toutes les variables de design
   pour assurer une cohérence visuelle sur tout le site.
@@ -12,48 +13,52 @@
 */
 
 :root {
-  /* ==================== COULEURS ==================== */
+  /* ==================== COULEURS FT ==================== */
   
-  /* Couleurs principales */
-  --color-primary-beige: #E8DFD0;
-  --color-primary-blue: #1E4B7A;
-  --color-primary-blue-hover: #2A5A8F;
+  /* Couleurs principales - Financial Times */
+  --color-ft-salmon: #FFF1E5;  /* FT Pink signature - fond principal */
+  --color-ft-pink-dark: #FFF0DF;  /* Variante plus foncée */
+  --color-ft-black: #33302E;  /* Noir FT - header */
+  --color-ft-charcoal: #1A1817;  /* Noir profond - textes */
   
-  /* Couleurs neutres */
-  --color-neutral-black: #111111;
-  --color-neutral-dark: #222222;
-  --color-neutral-charcoal: #333333;
-  --color-neutral-gray: #555555;
-  --color-neutral-gray-light: #777777;
-  --color-neutral-white: #ffffff;
+  /* Couleurs neutres premium */
+  --color-neutral-black: #000000;
+  --color-neutral-dark: #1A1A1A;
+  --color-neutral-charcoal: #2D2D2D;
+  --color-neutral-gray: #4A4A4A;
+  --color-neutral-gray-light: #6B6B6B;
+  --color-neutral-white: #FFFFFF;
   
   /* Couleurs de bordures */
-  --color-border-light: #e5e5e5;
-  --color-border-beige: #E0D5C8;
+  --color-border-light: #E0E0E0;
+  --color-border-medium: #C8C8C8;
+  --color-border-dark: #333333;
   
   /* Couleurs de fond */
-  --color-bg-light: #f3f4f6;
-  --color-bg-gray: #f9fafb;
-  --color-bg-hover: #e5e7eb;
+  --color-bg-light: #FAF9F8;
+  --color-bg-gray: #F5F5F5;
+  --color-bg-hover: #EBEBEB;
   
-  /* Couleur accent */
-  --color-accent-blue: #0071e3;
+  /* Couleurs d'accent */
+  --color-accent-green: #00805C;  /* Succès/positif */
+  --color-accent-red: #CC0033;    /* Erreur/négatif */
   
   /* ==================== TYPOGRAPHIE ==================== */
   
   /* Familles de polices */
-  --font-family-display: 'Times New Roman', Times, serif;
-  --font-family-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-display: 'Times New Roman', 'Georgia', Times, serif;
+  --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   
   /* Tailles de police */
-  --font-size-xs: 14px;
-  --font-size-sm: 15px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
   --font-size-base: 16px;
-  --font-size-md: 17px;
-  --font-size-lg: 18px;
-  --font-size-xl: 20px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
   --font-size-2xl: 32px;
-  --font-size-3xl: 42px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 56px;
   
   /* Poids de police */
   --font-weight-regular: 400;
@@ -62,12 +67,14 @@
   --font-weight-bold: 700;
   
   /* Line height */
-  --line-height-tight: 1.4;
+  --line-height-tight: 1.2;
   --line-height-base: 1.5;
-  --line-height-relaxed: 1.6;
+  --line-height-relaxed: 1.7;
   
   /* Letter spacing */
-  --letter-spacing-tight: -0.03em;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.02em;
   
   /* ==================== ESPACEMENTS ==================== */
   
@@ -78,30 +85,35 @@
   --spacing-xl: 32px;
   --spacing-2xl: 48px;
   --spacing-3xl: 64px;
-  --spacing-4xl: 80px;
+  --spacing-4xl: 96px;
+  --spacing-5xl: 128px;
   
   /* ==================== BORDURES ==================== */
   
-  --border-radius-sm: 6px;
-  --border-radius-md: 8px;
-  --border-radius-lg: 12px;
+  --border-radius-none: 0;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 12px;
   --border-radius-full: 999px;
   
-  --border-width: 1px;
-  --border-width-thick: 2px;
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
   
   /* ==================== OMBRES ==================== */
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.10);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.12);
   
   /* ==================== TRANSITIONS ==================== */
   
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
-  --transition-slow: 0.4s ease;
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
   --transition-slower: 0.5s ease;
   
   /* ==================== LAYOUT ==================== */
@@ -111,7 +123,7 @@
   --form-max-width: 600px;
   --quiz-max-width: 700px;
   
-  --header-height: 64px;
+  --header-height: 72px;
   --footer-height: auto;
 }
 
@@ -122,11 +134,13 @@
 .text-secondary { color: var(--color-neutral-gray); }
 .text-muted { color: var(--color-neutral-gray-light); }
 .text-white { color: var(--color-neutral-white); }
+.text-ft-charcoal { color: var(--color-ft-charcoal); }
 
 /* Classes de couleurs de fond */
-.bg-beige { background-color: var(--color-primary-beige); }
+.bg-ft-salmon { background-color: var(--color-ft-salmon); }
 .bg-white { background-color: var(--color-neutral-white); }
 .bg-light { background-color: var(--color-bg-light); }
+.bg-ft-black { background-color: var(--color-ft-black); }
 
 /* Classes de typographie */
 .font-display { font-family: var(--font-family-display); }
@@ -138,39 +152,3 @@
 .spacing-md { padding: var(--spacing-md); }
 .spacing-lg { padding: var(--spacing-lg); }
 .spacing-xl { padding: var(--spacing-xl); }
-
-/* ==================== GUIDE D'UTILISATION ==================== */
-
-/*
-COMMENT UTILISER CE SYSTÈME DE DESIGN :
-
-1. DANS VOS FICHIERS HTML :
-   Ajoutez cette ligne AVANT style.css :
-   <link rel="stylesheet" href="design-system.css">
-
-2. DANS VOTRE CSS (style.css) :
-   Remplacez les valeurs en dur par les variables CSS :
-   
-   AVANT :
-   background-color: #E8DFD0;
-   color: #111111;
-   font-family: 'Times New Roman', Times, serif;
-   
-   APRÈS :
-   background-color: var(--color-primary-beige);
-   color: var(--color-neutral-black);
-   font-family: var(--font-family-display);
-
-3. EXEMPLES DE REMPLACEMENT :
-   - #E8DFD0 → var(--color-primary-beige)
-   - #111111 → var(--color-neutral-black)
-   - #222222 → var(--color-neutral-dark)
-   - #555555 → var(--color-neutral-gray)
-   - #777777 → var(--color-neutral-gray-light)
-   - #ffffff → var(--color-neutral-white)
-   - #e5e5e5 → var(--color-border-light)
-   - #1E4B7A → var(--color-primary-blue)
-   - 16px → var(--spacing-md)
-   - 24px → var(--spacing-lg)
-   - 0.3s ease → var(--transition-base)
-*/

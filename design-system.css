@@ -1,0 +1,176 @@
+/*
+=====================================================
+  WEGROW DESIGN SYSTEM - CHARTE GRAPHIQUE
+=====================================================
+  Ce fichier centralise toutes les variables de design
+  pour assurer une cohérence visuelle sur tout le site.
+  
+  À inclure AVANT style.css dans tous les fichiers HTML :
+  <link rel="stylesheet" href="design-system.css">
+  <link rel="stylesheet" href="style.css">
+=====================================================
+*/
+
+:root {
+  /* ==================== COULEURS ==================== */
+  
+  /* Couleurs principales */
+  --color-primary-beige: #E8DFD0;
+  --color-primary-blue: #1E4B7A;
+  --color-primary-blue-hover: #2A5A8F;
+  
+  /* Couleurs neutres */
+  --color-neutral-black: #111111;
+  --color-neutral-dark: #222222;
+  --color-neutral-charcoal: #333333;
+  --color-neutral-gray: #555555;
+  --color-neutral-gray-light: #777777;
+  --color-neutral-white: #ffffff;
+  
+  /* Couleurs de bordures */
+  --color-border-light: #e5e5e5;
+  --color-border-beige: #E0D5C8;
+  
+  /* Couleurs de fond */
+  --color-bg-light: #f3f4f6;
+  --color-bg-gray: #f9fafb;
+  --color-bg-hover: #e5e7eb;
+  
+  /* Couleur accent */
+  --color-accent-blue: #0071e3;
+  
+  /* ==================== TYPOGRAPHIE ==================== */
+  
+  /* Familles de polices */
+  --font-family-display: 'Times New Roman', Times, serif;
+  --font-family-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  
+  /* Tailles de police */
+  --font-size-xs: 14px;
+  --font-size-sm: 15px;
+  --font-size-base: 16px;
+  --font-size-md: 17px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 42px;
+  
+  /* Poids de police */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line height */
+  --line-height-tight: 1.4;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.6;
+  
+  /* Letter spacing */
+  --letter-spacing-tight: -0.03em;
+  
+  /* ==================== ESPACEMENTS ==================== */
+  
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+  
+  /* ==================== BORDURES ==================== */
+  
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 999px;
+  
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  
+  /* ==================== OMBRES ==================== */
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.08);
+  
+  /* ==================== TRANSITIONS ==================== */
+  
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.4s ease;
+  --transition-slower: 0.5s ease;
+  
+  /* ==================== LAYOUT ==================== */
+  
+  --container-max-width: 1200px;
+  --content-max-width: 900px;
+  --form-max-width: 600px;
+  --quiz-max-width: 700px;
+  
+  --header-height: 64px;
+  --footer-height: auto;
+}
+
+/* ==================== CLASSES UTILITAIRES ==================== */
+
+/* Classes de couleurs de texte */
+.text-primary { color: var(--color-neutral-black); }
+.text-secondary { color: var(--color-neutral-gray); }
+.text-muted { color: var(--color-neutral-gray-light); }
+.text-white { color: var(--color-neutral-white); }
+
+/* Classes de couleurs de fond */
+.bg-beige { background-color: var(--color-primary-beige); }
+.bg-white { background-color: var(--color-neutral-white); }
+.bg-light { background-color: var(--color-bg-light); }
+
+/* Classes de typographie */
+.font-display { font-family: var(--font-family-display); }
+.font-body { font-family: var(--font-family-body); }
+
+/* Classes d'espacement */
+.spacing-xs { padding: var(--spacing-xs); }
+.spacing-sm { padding: var(--spacing-sm); }
+.spacing-md { padding: var(--spacing-md); }
+.spacing-lg { padding: var(--spacing-lg); }
+.spacing-xl { padding: var(--spacing-xl); }
+
+/* ==================== GUIDE D'UTILISATION ==================== */
+
+/*
+COMMENT UTILISER CE SYSTÈME DE DESIGN :
+
+1. DANS VOS FICHIERS HTML :
+   Ajoutez cette ligne AVANT style.css :
+   <link rel="stylesheet" href="design-system.css">
+
+2. DANS VOTRE CSS (style.css) :
+   Remplacez les valeurs en dur par les variables CSS :
+   
+   AVANT :
+   background-color: #E8DFD0;
+   color: #111111;
+   font-family: 'Times New Roman', Times, serif;
+   
+   APRÈS :
+   background-color: var(--color-primary-beige);
+   color: var(--color-neutral-black);
+   font-family: var(--font-family-display);
+
+3. EXEMPLES DE REMPLACEMENT :
+   - #E8DFD0 → var(--color-primary-beige)
+   - #111111 → var(--color-neutral-black)
+   - #222222 → var(--color-neutral-dark)
+   - #555555 → var(--color-neutral-gray)
+   - #777777 → var(--color-neutral-gray-light)
+   - #ffffff → var(--color-neutral-white)
+   - #e5e5e5 → var(--color-border-light)
+   - #1E4B7A → var(--color-primary-blue)
+   - 16px → var(--spacing-md)
+   - 24px → var(--spacing-lg)
+   - 0.3s ease → var(--transition-base)
+*/

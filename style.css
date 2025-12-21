@@ -384,5 +384,79 @@ footer a:hover{
 }
 .hero,.section{animation:fadeIn var(--transition-slow) ease-out}
 
+/* ========== QUIZ ========== */
+
+/* Masquer toutes les questions par défaut */
+.quiz-question {
+  display: none;
+}
+
+/* Afficher seulement la question active */
+.quiz-question.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Barre de progression du quiz */
+.quiz-progress {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-base-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.quiz-progress-bar {
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+/* Compteur de questions */
+.quiz-counter {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: var(--weight-normal);
+}
+
+/* Options du quiz */
+.quiz-option {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--color-surface);
+}
+
+.quiz-option:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-base-light);
+}
+
+.quiz-option.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-base-light);
+  font-weight: var(--weight-bold);
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 0.75rem;
+}
+
+/* Navigation du quiz */
+.quiz-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+
 
 

@@ -1,6 +1,6 @@
 /* ==========================================================================
    WEGROW STYLES – ULTRA PREMIUM POLISH
-   FT × Saint Laurent × Apple niveau
+   FT × Apple niveau
    ========================================================================== */
 
 /* Reset & Base */
@@ -502,3 +502,4 @@ footer a:hover {
 .section {
   animation: fadeIn var(--transition-slow) ease-out;
 }
+

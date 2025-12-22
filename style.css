@@ -45,7 +45,6 @@ img {
 ====================================================== */
 #header-placeholder:empty,
 #footer-placeholder:empty {
-    min-height: var(--header-height);
     opacity: 0;
 }
 
@@ -509,6 +508,7 @@ footer p {
     text-align: center;
   }
 }}
+
 
 
 

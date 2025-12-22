@@ -38,9 +38,9 @@ img {
 
 /* ======================================================
    HEADER
-=
-
-.site-header {  position: sticky;
+====================================================== */
+.site-header {
+  position: sticky;
   top: 0;
   z-index: 1000;
   height: var(--header-height);
@@ -490,10 +490,6 @@ footer p {
     text-align: center;
   }
 }}
-
-
-
-
 
 
 

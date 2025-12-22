@@ -81,7 +81,40 @@ img {
 
 /* ======================================================
    HERO — STATUTAIRE
+=
+
+/* ======================================================
+   HAMBURGER MENU
 ====================================================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}===================================================== */
 .hero {
   padding: 9rem 1.5rem 7rem;
   text-align: center;
@@ -397,6 +430,10 @@ footer p {
   .site-header {
     padding: 0 1.5rem;
   }
+     
+    .hamburger {
+        display: flex;
+    }
   
   .main-nav {
     display: none;
@@ -411,7 +448,7 @@ footer p {
     gap: 2rem;
   }
   
-  .main-nav.open {
+  .main-nav.active {
     display: flex;
   }
   
@@ -442,6 +479,7 @@ footer p {
     text-align: center;
   }
 }}
+
 
 
 

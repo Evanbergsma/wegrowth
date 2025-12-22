@@ -110,13 +110,43 @@
                     
                     <button type="submit" class="btn-primary btn-submit">Envoyer ma demande</button>
                 </form>
+
+                      
+      <div id="form-message" class="form-message" style="display:none;"></div>
             </div>
         </section>
     </main>
 
+    
+<script>
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const msgDiv = document.getElementById('form-message');
+  
+  try {
+    const response = await fetch(e.target.action, {
+      method: 'POST',
+      body: formData
+    });
+    if (response.ok) {
+      msgDiv.className = 'form-message success';
+      msgDiv.textContent = '✓ Message envoyé ! Nous vous recontactons sous 24h.';
+      e.target.reset();
+    } else {
+      throw new Error('Error');
+    }
+  } catch (error) {
+    msgDiv.className = 'form-message error';
+    msgDiv.textContent = '⚠ Erreur d\'envoi. Réessayez ou contactez-nous sur LinkedIn.';
+  }
+  msgDiv.style.display = 'block';
+});
+</script>
     <div id="footer-placeholder"></div>
 </body>
 </html>
+
 
 
 

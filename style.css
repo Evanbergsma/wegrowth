@@ -10,6 +10,7 @@
 
 html, body {
   height: 100%;
+     scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,6 +67,9 @@ img {
 
 .main-nav a:hover {
   color: var(--color-text);
+     text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .header-cta {
@@ -79,8 +83,15 @@ img {
   text-transform: uppercase;
 }
 
+.header-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(153, 15, 61, 0.3);
+    background-color: #a91049;
+}
+
 /* ======================================================
    HERO — STATUTAIRE
+    transition: all 0.3s ease;
 =
 
 /* ======================================================
@@ -479,6 +490,7 @@ footer p {
     text-align: center;
   }
 }}
+
 
 
 

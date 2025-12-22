@@ -40,25 +40,7 @@ img {
    HEADER
 =
 
-/* ======================================================
-   PREVENT FOUC (Flash of Unstyled Content)
-====================================================== */
-#header-placeholder:empty,
-#footer-placeholder:empty {
-    opacity: 0;
-}
-
-#header-placeholder:not(:empty),
-#footer-placeholder:not(:empty) {
-    animation: fadeIn 0.2s ease forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}===================================================== */
-.site-header {
-  position: sticky;
+.site-header {  position: sticky;
   top: 0;
   z-index: 1000;
   height: var(--header-height);
@@ -508,6 +490,7 @@ footer p {
     text-align: center;
   }
 }}
+
 
 
 
